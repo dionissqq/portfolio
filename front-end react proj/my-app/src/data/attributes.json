@@ -1,0 +1,19 @@
+[
+    {
+        "id":"1",
+        "name":"type",
+        "values":[
+            "dokimakura",
+            "t-shirt",
+            "jeans"
+        ]
+    },
+    {
+        "id":"2",
+        "name":"color",
+        "values":[
+            "blue",
+            "black"
+        ]
+    }
+]
