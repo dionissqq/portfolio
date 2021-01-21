@@ -1,0 +1,31 @@
+﻿@page "/play/{id}"
+@model lastOne.Pages.GamePlayModel
+@{
+}
+<script>
+    localStorage.setItem("game id", @Model.id)
+</script>
+<div id="container" >
+    <div id="central_space" class="central_data">
+        <div id="opponent_name" class="names"></div>
+        <div id="boards" class="boards">
+            <div id="left_board">
+                <table id="left_table" class="board"cellspacing="2" border="1" cellpadding="5">
+                </table>
+            </div>
+            <div id="main_board">
+                <table id="main_table" class="board"cellspacing="2" border="1" cellpadding="5">
+                </table>
+            </div>
+            <div id="right_board">
+                <table id="right_table" class="board" cellspacing="2" border="1" cellpadding="5">
+                </table>
+            </div>
+        </div>
+        <div id="my_name" class="names"></div>
+    </div>
+    
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/play.js"></script>

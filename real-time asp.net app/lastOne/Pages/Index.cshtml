@@ -1,0 +1,32 @@
+﻿@page 
+
+@model lastOne.Pages.IndexModel
+@{
+}
+
+<h5>Here we are. Create or join a game.</h5>
+
+<hr />
+<div class="input-group mb-3" style="width: 300px">
+    <input id="firstPlayerName" type="text" id="firstPlayerName" class="form-control" placeholder="your name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button id="createButton" class="btn btn-outline-secondary btn-outline-success" type="button">Create</button>
+    </div>
+</div>
+
+<hr />
+<div style="width: 300px">
+    <input type="text" id="secondPlayerName" class="form-control" placeholder="your name">
+</div>
+
+<br />
+
+<div class="input-group mb-2" style="width: 300px">
+    <input type="text" id="join id" class="form-control" placeholder="game id" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button id="joinButton" class="btn btn-outline-secondary btn-outline-success" type="button">join</button>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/gamesManaging.js"></script>
